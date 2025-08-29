@@ -67,7 +67,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
    - name: buid Project
-     run: mvn project
+     run: mvn package
    
     
   
