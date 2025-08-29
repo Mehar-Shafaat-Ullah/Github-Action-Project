@@ -44,16 +44,16 @@ jobs:
   test:
    runs-on: self-hosted
    needs: security-checks
-    steps:
-    - uses: actions/checkout@v4
-    - name: Set up JDK 17
-      uses: actions/setup-java@v4
-      with:
+   steps:
+   - uses: actions/checkout@v4
+   - name: Set up JDK 17
+     uses: actions/setup-java@v4
+     with:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Unit test cases
-      run: mvn test
+   - name: Unit test cases
+     run: mvn test
   
    
     
